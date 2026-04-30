@@ -1,0 +1,220 @@
+{
+  "group": "default",
+  "picked_game": "default_game",
+  "card_key": "",
+  "infer_debug": true,
+  "print_fps": false,
+  "show_motion_speed": false,
+  "is_show_curve": false,
+  "show_infer_time": true,
+  "is_show_down": false,
+  "is_show_priority_debug": false,
+  "show_fov": true,
+  "is_obs": true,
+  "obs_ip": "127.0.0.1",
+  "obs_port": 6666,
+  "obs_fps": 60,
+  "is_cjk": false,
+  "cjk_device_id": 0,
+  "cjk_fps": 60,
+  "cjk_resolution": "1920x1080",
+  "cjk_crop_size": "640x640",
+  "cjk_fourcc_format": "NV12",
+  "distance_scoring_weight": 0.6,
+  "center_scoring_weight": 0.4,
+  "size_scoring_weight": 0.3,
+  "is_show_top_window": false,
+  "gui_dpi_scale": 0.0,
+  "km_com": "COM1",
+  "move_method": "logitech",
+  "mask_left": false,
+  "mask_right": false,
+  "mask_middle": false,
+  "mask_side1": false,
+  "mask_side2": false,
+  "mask_x": false,
+  "mask_y": false,
+  "mask_wheel": false,
+  "dhz_ip": "127.0.0.1",
+  "dhz_port": 12090,
+  "dhz_random": false,
+  "catbox_ip": "127.0.0.1",
+  "catbox_port": 8888,
+  "catbox_uuid": "",
+  "recoil": {
+    "use_mouse_re_trajectory": false,
+    "replay_speed": 1.0,
+    "pixel_enhancement_ratio": 1.0,
+    "mapping": {}
+  },
+  "small_target_enhancement": {
+    "enabled": true,
+    "boost_factor": 2.0,
+    "threshold": 0.01,
+    "medium_threshold": 0.05,
+    "medium_boost": 1.5,
+    "smooth_enabled": true,
+    "smooth_frames": 5,
+    "adaptive_nms": true
+  },
+  "auto_flashbang": {
+    "enabled": false,
+    "delay_ms": 150,
+    "turn_angle": 90,
+    "sensitivity_multiplier": 2.5,
+    "return_delay": 80,
+    "min_confidence": 0.3,
+    "min_size": 5,
+    "use_curve": true,
+    "curve_speed": 8.0,
+    "curve_knots": 3
+  },
+  "games": {
+    "default_game": {
+      "default_gun": [
+        {
+          "number": 999999,
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "groups": {
+    "default": {
+      "infer_model": "D:/Users/123/Desktop/三角洲模型.onnx",
+      "original_infer_model": "D:/Users/123/Desktop/三角洲模型.onnx",
+      "is_trt": false,
+      "is_v8": true,
+      "right_down": false,
+      "long_press_duration": 0.2,
+      "class_names": [
+        "target"
+      ],
+      "aim_keys": {
+        "mouse_right": {
+          "type": "hold",
+          "status": true,
+          "label": "右键",
+          "key": "mouse_right",
+          "aim_bot": true,
+          "trigger_bot": false,
+          "x_offset": 0.0,
+          "y_offset": 0.0,
+          "x_offset_scope": 0.0,
+          "y_offset_scope": 0.0,
+          "x_speed": 1.0,
+          "y_speed": 1.0,
+          "aim_bot_scope": 120.0,
+          "aim_bot_position": 0.5,
+          "aim_bot_position2": 0.5,
+          "target_reference_class": 0,
+          "class_aim_positions": {
+            "0": {
+              "aim_bot_position": 0.5,
+              "aim_bot_position2": 0.5,
+              "confidence_threshold": 0.5,
+              "iou_t": 1.0
+            },
+            "1": {
+              "aim_bot_position": 0.0,
+              "aim_bot_position2": 0.0,
+              "confidence_threshold": 0.5,
+              "iou_t": 1.0
+            },
+            "2": {
+              "aim_bot_position": 0.0,
+              "aim_bot_position2": 0.0,
+              "confidence_threshold": 0.5,
+              "iou_t": 1.0
+            },
+            "3": {
+              "aim_bot_position": 0.0,
+              "aim_bot_position2": 0.0,
+              "confidence_threshold": 0.5,
+              "iou_t": 1.0
+            },
+            "4": {
+              "aim_bot_position": 0.0,
+              "aim_bot_position2": 0.0,
+              "confidence_threshold": 0.5,
+              "iou_t": 1.0
+            }
+          },
+          "smooth": 0.0,
+          "dynamic_scope_enabled": false,
+          "dynamic_scope_min_scope": 10.0,
+          "dynamic_scope_shrink_ms": 120,
+          "dynamic_scope_recover_ms": 120,
+          "aim_trigger_distance": 0.0,
+          "deadzone": 0.0,
+          "history_size": 5,
+          "output_scale_x": 1.0,
+          "output_scale_y": 1.0,
+          "uniform_threshold": 0.0,
+          "min_velocity_threshold": 0.0,
+          "max_velocity_threshold": 9999.0,
+          "compensation_factor": 1.0,
+          "fov_angle": 0.0,
+          "distance_weight": 1.0,
+          "base_step": 1.0,
+          "smoothing_factor": 0.5,
+          "auto_y": false,
+          "trigger": {
+            "status": false,
+            "continuous": false,
+            "recoil": false,
+            "start_delay": 0,
+            "press_delay": 1,
+            "end_delay": 0,
+            "random_delay": 0,
+            "x_trigger_scope": 1.0,
+            "y_trigger_scope": 1.0,
+            "x_trigger_offset": 0.0,
+            "y_trigger_offset": 0.0
+          },
+          "classes": [],
+          "class_priority_order": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overshoot_threshold": 3.0,
+          "overshoot_x_factor": 0.5,
+          "overshoot_y_factor": 0.3,
+          "min_position_offset": 0
+        }
+      }
+    }
+  },
+  "enable_parallel_processing": true,
+  "turbo_mode": true,
+  "skip_frame_processing": true,
+  "performance_mode": "balanced",
+  "use_async_move": false,
+  "frame_skip_ratio": 0,
+  "cpu_optimization": true,
+  "memory_optimization": true,
+  "is_curve": false,
+  "is_curve_uniform": false,
+  "offset_boundary_x": 0,
+  "offset_boundary_y": 0,
+  "knots_count": 0,
+  "distortion_mean": 0,
+  "distortion_st_dev": 0,
+  "distortion_frequency": 0,
+  "target_points": 0,
+  "km_box_vid": 0,
+  "km_box_pid": 0,
+  "km_net_ip": "127.0.0.1",
+  "km_net_port": 0,
+  "km_net_uuid": "",
+  "aim_mask_x": false,
+  "aim_mask_y": false,
+  "screen_width": 1920,
+  "screen_height": 1080
+}
